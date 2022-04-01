@@ -14,13 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('index');
+}) -> name('index');
 
 route::get('/api', function() {
     return view('api');
-});
+}) -> name('api');
 
-route::get('/index', function() {
-    return view('index');
-});
